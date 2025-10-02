@@ -4,7 +4,6 @@ import Episodes from "./components/Episodes/Episodes";
 import Details from "./components/Details/Details";
 import { episodeList } from "./data";
 import Description from "./components/Description/Description";
-import Title from "./components/Title/Title";
 
 function App() {
   const [selectedEpisode, setSelectedEpisode] = React.useState(null);
@@ -21,9 +20,9 @@ function App() {
           setSelectedEpisode={setSelectedEpisode}
         />
         <div className="details-column">
-        <Details selectedEpisode={selectedEpisode} />
-        <Title selectedEpisode={selectedEpisode} />
-        <Description selectedEpisode={selectedEpisode} />
+          <Details selectedEpisode={selectedEpisode} />
+          <Description selectedEpisode={selectedEpisode} />
+          <button className="watch-btn">Watch now</button>
         </div>
       </main>
     </>
