@@ -16,7 +16,7 @@ h2 {
 
 body {
   padding: 10rem;
-  margin-left: 15%;
+  margin-left: 6%;
 }
 
 main {
@@ -65,7 +65,10 @@ main {
   flex-direction: column;
   flex: 1;
   gap: 20px;
+  min-height: 400px;
 }
+
+
 
 .watch-btn {
   color: black;
@@ -75,6 +78,7 @@ main {
   height: 30px;
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
   cursor: pointer;
+  margin-top: auto;
 }
 
 h3 {
@@ -85,4 +89,14 @@ h3 {
 p {
   padding: 10px;
   font-size: 25px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.description-container p {
+  font-size: 20px;
+  font-style: italic;
+  padding-bottom: 50px;
 }

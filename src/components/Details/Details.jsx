@@ -8,10 +8,14 @@ function Details({ selectedEpisode }) {
   }
 
   return (
-    <section className="episode-id">
+    <section className="details">
       <h2>Episode {selectedEpisode?.id}</h2>
-
-      <p className="details">{selectedEpisode?.title}</p>
+      <p className="title">{selectedEpisode?.title}</p>
+      <section className="description-container">
+        <h3>Episode Summary</h3>
+        <p>{selectedEpisode?.description}</p>
+      </section>
+      <button className="watch-btn">Watch now</button>
     </section>
   );
 }
