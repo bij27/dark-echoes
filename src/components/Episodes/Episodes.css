@@ -7,6 +7,7 @@
 h1 {
   color: white;
   font-size: 80px;
+  text-decoration: underline;
 }
 
 h2 {
@@ -41,7 +42,7 @@ main {
 
 .episodes li {
   padding: 1ch;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   font-size: 25px;
 }
 
@@ -78,6 +79,9 @@ main {
   height: 30px;
   cursor: pointer;
   margin-top: auto;
+  letter-spacing: 2px;
+font-size: 18px;
+  font-weight: 700;
 }
 
 .watch-btn:hover {
@@ -88,6 +92,7 @@ main {
 .watch-btn:active {
   transition: background-color 0.3s ease, transform 0.3s ease;
   background-color: red;
+  color: white;
 }
 
 h3 {
