@@ -6,7 +6,7 @@
 
 h1 {
   color: white;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 h2 {
@@ -55,9 +55,11 @@ main {
 .details {
   display: flex;
   flex-direction: column;
+  text-wrap: wrap;
   align-items: flex-start;
   padding: 20px;
   font-size: 40px;
+  font-weight: 600;
 }
 
 .details-column {
@@ -68,17 +70,24 @@ main {
   min-height: 400px;
 }
 
-
-
 .watch-btn {
   color: black;
   background-color: rgb(255, 255, 255);
   font-weight: 600;
   width: 450px;
   height: 30px;
-  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
   cursor: pointer;
   margin-top: auto;
+}
+
+.watch-btn:hover {
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.watch-btn:active {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: red;
 }
 
 h3 {
@@ -96,7 +105,8 @@ p {
 }
 
 .description-container p {
-  font-size: 20px;
+  font-size: 30px;
   font-style: italic;
   padding-bottom: 50px;
+  text-wrap: wrap;
 }
